@@ -747,9 +747,9 @@ PlayerSettings:
     Unity_Ads: 0
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 4d80a396-b1d5-4e27-9132-b76970bacb4f
-  projectName: CMV2A_GameLab
-  organizationId: jared_nealon
+  cloudProjectId: 7f00441e-c280-4dba-abba-38cd45141b29
+  projectName: SteamVR
+  organizationId: fightah
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
