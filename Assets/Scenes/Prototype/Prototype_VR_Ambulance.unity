@@ -516,6 +516,11 @@ Prefab:
       propertyPath: m_ConnectedAnchor.y
       value: 0.043010928
       objectReference: {fileID: 0}
+    - target: {fileID: 54780700780924126, guid: a429c98b26cd82b45b59e34709595647,
+        type: 2}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a429c98b26cd82b45b59e34709595647, type: 2}
   m_IsPrefabParent: 0
@@ -1361,82 +1366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 173257530}
-  volumeLayer:
-    m_Bits: 2147483648
-  stopNaNPropagation: 1
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-    <jitter>k__BackingField: {x: 0, y: 0}
-    m_ResetHistory: 1
-    m_SampleIndex: 0
-    m_HistoryPingPong: 0000000000000000
-  subpixelMorphologicalAntialiasing: {}
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  dithering:
-    m_NoiseTextureIndex: 0
-  debugLayer:
-    lightMeter:
-      <output>k__BackingField: {fileID: 0}
-      requested: 0
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      <output>k__BackingField: {fileID: 0}
-      requested: 0
-      width: 512
-      height: 256
-      channel: 3
-      m_NumBins: 0
-      m_ThreadGroupSizeX: 0
-      m_ThreadGroupSizeY: 0
-    waveform:
-      <output>k__BackingField: {fileID: 0}
-      requested: 0
-      exposure: 0.12
-      height: 256
-      m_ThreadGroupSize: 0
-      m_ThreadGroupSizeX: 0
-      m_ThreadGroupSizeY: 0
-    vectorscope:
-      <output>k__BackingField: {fileID: 0}
-      requested: 0
-      size: 256
-      exposure: 0.12
-      m_ThreadGroupSizeX: 0
-      m_ThreadGroupSizeY: 0
-    frameWidth: 0
-    frameHeight: 0
-    <debugOverlayTarget>k__BackingField: {fileID: 0}
-    <debugOverlayActive>k__BackingField: 0
-    <debugOverlay>k__BackingField: 0
-    overlaySettings:
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
-  <haveBundlesBeenInited>k__BackingField: 0
-  m_Camera: {fileID: 0}
-  m_SettingsUpdateNeeded: 1
-  m_IsRenderingInSceneView: 0
-  m_NaNKilled: 0
 --- !u!81 &173257534
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1820,9 +1749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a537dcd25de0d4da321bb1019780ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerEvents: {fileID: 227677065}
-  menu: {fileID: 0}
-  menuFollower: {fileID: 0}
 --- !u!114 &227677060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3357,9 +3283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a537dcd25de0d4da321bb1019780ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerEvents: {fileID: 502408615}
-  menu: {fileID: 0}
-  menuFollower: {fileID: 0}
 --- !u!114 &502408608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4446,12 +4369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3cd996f9fccf3459630558441f16d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  subtitlePanel: {fileID: 0}
-  subtitleText: {fileID: 0}
-  evidencePanel: {fileID: 0}
-  evidenceText: {fileID: 0}
-  suspectPanel: {fileID: 0}
-  suspectText: {fileID: 0}
 --- !u!114 &724875785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5796,82 +5713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1028433807}
-  volumeLayer:
-    m_Bits: 2147483648
-  stopNaNPropagation: 1
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-    <jitter>k__BackingField: {x: 0, y: 0}
-    m_ResetHistory: 1
-    m_SampleIndex: 0
-    m_HistoryPingPong: 0000000000000000
-  subpixelMorphologicalAntialiasing: {}
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  dithering:
-    m_NoiseTextureIndex: 0
-  debugLayer:
-    lightMeter:
-      <output>k__BackingField: {fileID: 0}
-      requested: 0
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      <output>k__BackingField: {fileID: 0}
-      requested: 0
-      width: 512
-      height: 256
-      channel: 3
-      m_NumBins: 0
-      m_ThreadGroupSizeX: 0
-      m_ThreadGroupSizeY: 0
-    waveform:
-      <output>k__BackingField: {fileID: 0}
-      requested: 0
-      exposure: 0.12
-      height: 256
-      m_ThreadGroupSize: 0
-      m_ThreadGroupSizeX: 0
-      m_ThreadGroupSizeY: 0
-    vectorscope:
-      <output>k__BackingField: {fileID: 0}
-      requested: 0
-      size: 256
-      exposure: 0.12
-      m_ThreadGroupSizeX: 0
-      m_ThreadGroupSizeY: 0
-    frameWidth: 0
-    frameHeight: 0
-    <debugOverlayTarget>k__BackingField: {fileID: 0}
-    <debugOverlayActive>k__BackingField: 0
-    <debugOverlay>k__BackingField: 0
-    overlaySettings:
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
-  <haveBundlesBeenInited>k__BackingField: 0
-  m_Camera: {fileID: 0}
-  m_SettingsUpdateNeeded: 1
-  m_IsRenderingInSceneView: 0
-  m_NaNKilled: 0
 --- !u!114 &1028433812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6412,11 +6253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b92d2a7d2ab36774c8a1e26989948c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  ikActive: 1
-  lookObj: {fileID: 847176330}
-  leftHandObj: {fileID: 502408606}
-  rightHandObj: {fileID: 227677056}
 --- !u!95 &1111742445
 Animator:
   serializedVersion: 3
@@ -9224,9 +9060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1189f9ea7900f844912f77adb51c717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  callerName: 
-  inConversation: 0
-  myConversation: {fileID: 0}
 --- !u!54 &1783479270
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9802,7 +9635,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 51e4d28211e4c704e8f0c631e5cee3d7, type: 2}
+  - {fileID: 2100000, guid: b343c916087a3e44ea9b7c501bd74fae, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
