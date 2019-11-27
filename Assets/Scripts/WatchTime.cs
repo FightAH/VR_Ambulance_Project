@@ -23,6 +23,7 @@ public class WatchTime : MonoBehaviour
             {
                 Stop = 0;
                 Debug.Log("Time up");
+                startText.GetComponent<UnityEngine.UI.Text>().text = "00:00";
             }
         }
     }
