@@ -451,6 +451,7 @@ namespace VRTK
         public virtual void StartUsing(GameObject currentUsingObject)
         {
             StartUsing((currentUsingObject != null ? currentUsingObject.GetComponent<VRTK_InteractUse>() : null));
+            Debug.Log("using");
         }
 
         /// <summary>
