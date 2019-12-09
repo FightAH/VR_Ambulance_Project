@@ -1,48 +1,30 @@
 ﻿namespace VRTK.Examples
 {
-    using System.Collections;
-    using System.Collections.Generic;
     using UnityEngine;
-    using VRTK;
-    using UnityEngine.SceneManagement;
 
-    public class PutonStretcher : VRTK_InteractableObject
+    public class OpenDoor2 : VRTK_InteractableObject
     {
-        [Header("VRTK Door Options")]
         public bool flipped = false;
         public bool rotated = false;
 
         private float sideFlip = -1;
         private float side = -1;
         private float smooth = 270.0f;
-        private float doorOpenAngle = -90f;
-        private bool open = false;
+        private float doorOpenAngle = 90f;
+        public static bool open = false;
 
         private Vector3 defaultRotation;
         private Vector3 openRotation;
 
-        [Header("Salty Puppies Door Options")]
-        public bool unlocked = true;
-        public AudioClip doorLocked;
-        public AudioClip doorOpening;
-        private AudioSource audioPlayer;
-        public GameObject player2;
-        public GameObject player1;
-        public static int playerOnstretcher = 0;
+        public static int doorOpen2 = 0;
 
         public override void StartUsing(VRTK_InteractUse usingObject)
         {
-            if (MoveStretcher.stretcherMoved == 1)
-            {
-                base.StartUsing(usingObject);
-                player2.SetActive(true);
-                player1.SetActive(false);
-                playerOnstretcher = 1;
-            }
-            else
-            {
-                Debug.Log("MoveStretcher");
-            }
+            base.StartUsing(usingObject);
+            SetDoorRotation(usingObject.transform.position);
+            SetRotation();
+            open = !open;
+            doorOpen2 = 1;
         }
 
         protected void Start()
@@ -74,11 +56,5 @@
         {
             side = ((rotated == false && interacterPosition.z > transform.position.z) || (rotated == true && interacterPosition.x > transform.position.x) ? -1 : 1);
         }
-
-        public void UnlockDoor()
-        {
-            unlocked = true;
-        }
-
     }
 }

@@ -11,10 +11,12 @@
         private float side = -1;
         private float smooth = 270.0f;
         private float doorOpenAngle = 90f;
-        private bool open = false;
+        public static bool open = false;
 
         private Vector3 defaultRotation;
         private Vector3 openRotation;
+
+        public static int doorOpen1 = 0;
 
         public override void StartUsing(VRTK_InteractUse usingObject)
         {
@@ -22,6 +24,7 @@
             SetDoorRotation(usingObject.transform.position);
             SetRotation();
             open = !open;
+            doorOpen1 = 1;
         }
 
         protected void Start()
